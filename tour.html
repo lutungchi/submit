@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lịch trình du lịch Vịnh Hạ Long</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #e0f7fa, #e3f2fd);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0288d1, #26c6da);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .schedule {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .day {
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .day:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    .day h2 {
+      color: #0288d1;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    .day ul {
+      list-style: none;
+    }
+
+    .day ul li {
+      margin-bottom: 10px;
+      padding-left: 15px;
+      position: relative;
+    }
+
+    .day ul li::before {
+      content: "•";
+      color: #26c6da;
+      font-size: 1.5rem;
+      position: absolute;
+      left: 0;
+      top: -3px;
+    }
+
+    .highlight {
+      background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+      border-left: 5px solid #ff9800;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+      background: #0288d1;
+      color: white;
+    }
+
+    footer p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lịch trình du lịch Vịnh Hạ Long</h1>
+    <p>Hành trình khám phá kỳ quan thiên nhiên thế giới <br>
+       (Sau khi đăng kí form, các bạn sẽ có lịch trình riêng, dưới đây chỉ là lịch trình mẫu)
+    </p>
+  </header>
+
+  <div class="container">
+    <section class="schedule">
+
+      <div class="day highlight">
+        <h2>Ngày 1: Khởi hành – Vịnh Hạ Long</h2>
+        <ul>
+          <li>07:30: Khởi hành từ Hà Nội</li>
+          <li>12:00: Đến Hạ Long, dùng bữa trưa</li>
+          <li>13:30: Lên du thuyền tham quan vịnh</li>
+          <li>15:00: Tham quan Hang Sửng Sốt</li>
+          <li>18:30: Ăn tối & ngắm hoàng hôn trên vịnh</li>
+        </ul>
+      </div>
+
+      <div class="day">
+        <h2>Ngày 2: Khám phá thiên nhiên</h2>
+        <ul>
+          <li>06:30: Tập Tai Chi trên boong tàu</li>
+          <li>07:30: Ăn sáng</li>
+          <li>09:00: Chèo kayak tại Hang Luồn</li>
+          <li>11:30: Trả phòng du thuyền</li>
+          <li>14:00: Tham quan Bảo tàng Quảng Ninh</li>
+        </ul>
+      </div>
+
+      <div class="day">
+        <h2>Ngày 3: Hạ Long – Mua sắm</h2>
+        <ul>
+          <li>08:00: Ăn sáng tại khách sạn</li>
+          <li>09:30: Tham quan chợ Hạ Long</li>
+          <li>11:30: Trả phòng</li>
+          <li>13:00: Khởi hành về Hà Nội</li>
+          <li>18:00: Kết thúc chuyến đi</li>
+        </ul>
+      </div>
+
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Ha Long Bay</p>
+    <p>Designed by handsome Tùng Chi ❤️</p>
+  </footer>
+
+</body>
+</html>

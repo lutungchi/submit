@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ha Long Bay | Food & Recipes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: #f5fbff;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #0099cc, #00c6ff);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0099cc;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #005f80;
+        }
+
+        section {
+            padding: 50px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #0099cc;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        .food-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .food-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .food-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .food-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .food-card .content {
+            padding: 20px;
+        }
+
+        .food-card h3 {
+            margin-top: 0;
+            color: #0077aa;
+        }
+
+        .recipe {
+            background-color: #eaf6fb;
+            border-left: 5px solid #0099cc;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #0099cc;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Ha Long Bay Food & Recipes</h1>
+    <p>Discover the Taste of the Sea</p>
+</header>
+
+
+
+<section id="foods">
+    <h2>🍤 Famous Foods in Ha Long Bay</h2>
+
+    <div class="food-container">
+        <a href="https://vinwonders.com/vi/wonderpedia/news/bo-tui-cach-chon-mua-cha-muc-ha-long-chat-luong/">
+        <div class="food-card">
+            
+            <img src="https://th.bing.com/th/id/R.37135db37be5b2e2c79ca816eaeec7f2?rik=DNU0vVtfG1qtAg&riu=http%3a%2f%2freviewvilla.vn%2fwp-content%2fuploads%2f2022%2f05%2fcha-muc-ha-long-14.jpg&ehk=AjH9C8tldN0wtTgZg3Xw2S%2bUVqZfoNiM1BdsDoaYmgc%3d&risl=&pid=ImgRaw&r=0" alt="Cha muc">
+            <div class="content">
+                <h3>Chả Mực Hạ Long</h3>
+                <p>Chả mực chiên – đặc sản nổi tiếng nhất của Hạ Long, giòn bên ngoài và dai mềm bên trong.</p>
+            </div>
+        </div>
+        </a>
+        <a href="https://mia.vn/cam-nang-du-lich/sam-bien-mon-dac-san-ha-long-ma-du-khach-nhat-dinh-phai-thu-mot-lan-3292">
+        <div class="food-card">
+            <img src="https://cdn.tgdd.vn/Files/2022/09/05/1465433/kinh-nghiem-chinh-phuc-nui-bai-tho-ngam-nhin-vinh-ha-long-dep-me-hon-202209051506471472.jpg" alt="Sam bien">
+            <div class="content">
+                <h3>Sam Biển</h3>
+                <p>Một món hải sản độc đáo được chế biến theo nhiều cách khác nhau như nướng, xào chua ngọt hoặc làm gỏi.</p>
+            </div>
+        </div>
+        </a>
+        <a href="https://bavabi.com/cach-nau-bun-be-be-tom-tit-ngot-thanh-don-gian-cho-ngay-he/">
+        <div class="food-card">
+            <img src="https://cdn.justfly.vn/1920x1455/media/202302/24/1677225249-bun-hai-san-loan-thuy-dong-bac-ha-long-2.jpg" alt="Bun be be">
+            <div class="content">
+                <h3>Bún Bề Bề</h3>
+                <p>Một món bún nước đậm đà được nấu từ bề bề và nước dùng hải sản tươi ngon.</p>
+            </div>
+        </div>
+        </a>
+    </div>
+</section>
+
+<section id="recipes">
+    <h2>📖 Traditional Recipes</h2>
+
+    <div class="recipe">
+    <h3>Công thức: Chả Mực Hạ Long</h3>
+    <p><strong>Nguyên liệu:</strong> Mực tươi, tiêu, tỏi, nước mắm, dầu ăn.</p>
+    <p><strong>Các bước thực hiện:</strong></p>
+    <ul>
+        <li>Làm sạch mực và giã nhuyễn.</li>
+        <li>Trộn mực với gia vị và tỏi.</li>
+        <li>Nặn thành từng miếng nhỏ.</li>
+        <li>Chiên ngập dầu đến khi vàng giòn.</li>
+    </ul>
+    </div>
+    
+    <div class="recipe">
+    <h3>Công thức: Sam Biển Xào Chua Ngọt</h3>
+    <p><strong>Nguyên liệu:</strong> Sam biển, sả, ớt, tỏi, me (hoặc giấm), đường, nước mắm, rau răm.</p>
+    <p><strong>Các bước thực hiện:</strong></p>
+    <ul>
+        <li>Làm sạch sam biển, tách lấy thịt.</li>
+        <li>Phi thơm tỏi và sả, cho sam vào xào săn.</li>
+        <li>Thêm nước me, đường, nước mắm để tạo vị chua ngọt.</li>
+        <li>Đảo đều đến khi thấm gia vị, rắc rau răm rồi tắt bếp.</li>
+        <li>Dùng nóng, ăn kèm bánh đa hoặc cơm trắng.</li>
+    </ul>
+    </div>
+
+    <div class="recipe">
+    <h3>Công thức: Bún Bề Bề</h3>
+    <p><strong>Nguyên liệu:</strong> Bề bề (tôm tít), bún, cà chua, rau thơm.</p>
+    <p><strong>Các bước thực hiện:</strong></p>
+    <ul>
+        <li>Luộc bề bề để lấy nước dùng.</li>
+        <li>Xào cà chua để tạo màu cho nước dùng.</li>
+        <li>Cho bún và bề bề vào nước dùng.</li>
+        <li>Dùng nóng cùng rau thơm.</li>
+    </ul>
+    </div>
+
+</section>
+
+
+
+<footer>
+    <p>© 2025 Ha Long Bay</p>
+    <p>Designed by handsome Tùng Chi ❤️</p>
+</footer>
+
+</body>
+</html>

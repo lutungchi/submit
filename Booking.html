@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tour Booking Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0066cc;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        .row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .row div {
+            flex: 1;
+        }
+
+        .submit-btn {
+            margin-top: 25px;
+            width: 100%;
+            padding: 12px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #004c99;
+        }
+        footer {
+    margin-top: 40px;
+    background-color: #0066cc;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 6px 0;
+}
+
+footer span {
+    font-weight: bold;
+}
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>📝 Tour & Hotel Booking Form</h1>
+
+    <form>
+        <!-- Thông tin cá nhân -->
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter your phone number" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <!-- Tour -->
+        <label>Tour Type</label>
+        <select>
+            <option>Ha Long Bay 1-Day Tour</option>
+            <option>Ha Long Bay 2 Days 1 Night</option>
+            <option>Ha Long Bay 3 Days 2 Nights</option>
+        </select>
+
+        <!-- Ngày -->
+        <div class="row">
+            <div>
+                <label>Departure Date</label>
+                <input type="date">
+            </div>
+            <div>
+                <label>Number of People</label>
+                <input type="number" min="1" value="1">
+            </div>
+        </div>
+
+        <!-- Khách sạn -->
+        <label>Hotel Booking</label>
+        <select>
+            <option>No hotel</option>
+            <option>3-Star Hotel</option>
+            <option>4-Star Hotel</option>
+            <option>5-Star Hotel</option>
+        </select>
+
+        <div class="row">
+            <div>
+                <label>Check-in Date</label>
+                <input type="date">
+            </div>
+            <div>
+                <label>Check-out Date</label>
+                <input type="date">
+            </div>
+        </div>
+
+        <!-- Ghi chú -->
+        <label>Special Request</label>
+        <textarea placeholder="Any special request..."></textarea>
+
+        <!-- Nút gửi -->
+        <button type="submit" class="submit-btn">
+            Submit Booking
+        </button>
+    </form>
+</div>
+    <footer>
+    <p>© 2025 Ha Long Bay</p>
+    <p>Designed handsome Tùng Chi ❤️</p>
+</footer>
+</body>
+</html>
